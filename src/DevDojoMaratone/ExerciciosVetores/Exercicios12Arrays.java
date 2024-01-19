@@ -15,6 +15,7 @@ public class Exercicios12Arrays {
             System.out.println("Digite o valor na pos: " + i);
             valores[i] = teclado.nextInt();
         }
+        // condição para mostrar os valores multiplos do vetor
         System.out.println("Valores multiplos do vetor: ");
         for (int i = 0; i < valores.length; i++) {
             if (valores[i] % 5 == 0) {

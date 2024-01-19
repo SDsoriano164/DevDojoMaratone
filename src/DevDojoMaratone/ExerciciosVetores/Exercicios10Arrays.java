@@ -4,7 +4,10 @@ import java.util.Scanner;
 
 public class Exercicios10Arrays {
     public static void main(String[] args) {
+        //Criando vet
         int [] valores = new int[7];
+
+
         Scanner teclado = new Scanner(System.in);
         int quantidadesPares = 0;
         for (int i = 0; i <valores.length; i++) {
@@ -12,6 +15,8 @@ public class Exercicios10Arrays {
             valores[i] = teclado.nextInt();
 
         }
+
+
         System.out.print("Vetor A  = ");
         for (int i = 0; i < valores.length; i++) {
             if (valores[i] % 2 == 0){
