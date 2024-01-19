@@ -1,4 +1,4 @@
-package DevDojoMaratone.Exercicios;
+package DevDojoMaratone.ExerciciosVetores;
 
 public class ArraysMultTestes {
     public static void main(String[] args) {
