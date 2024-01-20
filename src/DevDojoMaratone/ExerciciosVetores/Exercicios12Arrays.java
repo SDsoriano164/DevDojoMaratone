@@ -7,6 +7,7 @@ public class Exercicios12Arrays {
         //Criando Array
         int [] valores = new int[5];
         //Criando variavel para armazenar soma
+
         int somaMulti = 0;
         Scanner teclado = new Scanner(System.in);
 
