@@ -22,7 +22,17 @@ public class Remember {
         for (int i = 0; i <vetorA.length; i++) {
             soma += vetorA[i] + vetorB[i];
         }
-        System.out.println(soma);
+        System.out.println("Vetores de A :");
+        for (int i = 0; i <vetorA.length; i++) {
+            System.out.print(vetorA[i] + " ");
+
+        }
+        System.out.println("vetores de B : ");
+        for (int i = 0; i <vetorB.length; i++) {
+            System.out.print(vetorB[i] + " ");
+
+        }
+        System.out.println("Soma dos vetores " + soma);
 
     }
 }
