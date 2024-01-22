@@ -13,19 +13,24 @@ public class Exercicios15Arrays {
 
     Scanner teclado = new Scanner(System.in);
 
+    // inserindo dados no vetor
         System.out.println("Insira os dados do vetor A ");
         for (int i = 0; i < vetorA.length ; i++) {
             vetorA[i] = teclado.nextInt();
 
         }
+        // testando condições
         for (int i = 0; i < vetorA.length ; i++) {
             if (vetorA[i] <15) {
+                //somando os vetores de A se o valor for menor que 15
                 soma += vetorA[i];
 
             }else if (vetorA[i] == 15) {
+                // somando os valores do vetor A se for igual a 15
                 iguaisQuinze += vetorA[i];
 
             }else{
+                // somando vetores de A se for maior que Quinze
                 somaVetorMaiorQuinze += vetorA[i];
                 maiorQuinze++;
             }
