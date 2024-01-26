@@ -2,7 +2,7 @@ package DevDojoMaratone.introdução;
 
 public class ArraysMultidimensionaispt02 {
     public static void main(String[] args) {
-        int [][] Arrayint = new int[3][]; // se for inicializado vai retornar null excepetion ou sejam sem valores referenciados na posição de um array
+        int [][] Arrayint = new int[3][3]; // se for inicializado vai retornar null excepetion ou sejam sem valores referenciados na posição de um array
 
         // Inicializações
         //  Criando um array de 3 linhas
