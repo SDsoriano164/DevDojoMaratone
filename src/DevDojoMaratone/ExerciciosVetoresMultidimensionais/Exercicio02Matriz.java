@@ -19,8 +19,9 @@ public class Exercicio02Matriz {
 
         System.out.println("Array 4x4 de números aleatórios:");
         for (int i = 0; i < array4D.length; i++) {
-            System.out.println("\nLinha -> " + i );
+            System.out.println("\nLinha : " + i );
             for (int j = 0; j < array4D[i].length; j++) {
+                System.out.println(" \nColuna -> " + j);
                 System.out.print(array4D[i][j] + " ");
                 if (array4D[i][j] > maior) {
                     posMaiorI = i;

@@ -1,4 +1,4 @@
-package DevDojoMaratone.ExerciciosVetoresMultidimensionais;
+
 
 import java.util.Random;
 import java.util.Scanner;
