@@ -13,15 +13,26 @@ public class CalculadoraTeste03Retornos {
 
         // guardando resultado da chamada em uma variavel
 
-       double result = calculadora.divideDoisNumeros2(20,2);
+
+        //caso 1:
+       double result = calculadora.divideDoisNumeros(20,0); // retornando dentro de uma variavel
         System.out.println(result);
 
+        System.out.println("------------------");
 
-       //caso 2
-        System.out.println(calculadora.divideDoisNumeros2(20,2));
+       //caso 2:
+        System.out.println(calculadora.divideDoisNumeros2(20,2)); // retornando no system.out.print
 
-        //caso 3
-        System.out.println(calculadora.divideDoisNumeros3(20,2));
+        System.out.println("------------------");
+        //caso 3:
+        System.out.println(calculadora.divideDoisNumeros3(20,2)); //
+
+
+        System.out.println("------------------");
+
+        //caso 4 retorno em metodos
+        calculadora.divideDoisnumero4(20,2);
+
 
 
 

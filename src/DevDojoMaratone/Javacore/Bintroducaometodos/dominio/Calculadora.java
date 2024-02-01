@@ -27,30 +27,42 @@ public class Calculadora {
 
     // Retornos de um método,   produzir e devolver a ponto de chamada
     public double divideDoisNumeros (double num1, double num2){
-        if (num1 % 2 ==0){
+        if (num2 ==0){
+            System.out.println("Não existe divisão por 0");
             return 0;
+
         }
-      return (int) num1/num2;      // pode fazer casting no retorno
+        System.out.println(num1 + " / " + num2 + " = ");
+      return  num1/num2;
+
     }
     public int divideDoisNumeros2 (double num1, double num2){
-        if (num1 % 2 ==0){
-            return 0;
-        }else{
+        if (num2 == 0){
+            System.out.println(num1 + " / " + num2 + " = ");
             return (int) (num1/num2);
+        }else{
+            System.out.println("Não existe divisão por 0");
+         return 0;
         }
-
     }
+
+
     public double divideDoisNumeros3 (double num1, double num2){
         if (num1 !=0){
+            System.out.println(num1 + " / " + num2 + " = ");
             return  num1/num2;
         }
-        return 0;       // pode fazer casting no retorno
+        System.out.println("Não existe divisão por 0");
+        return 0;
     }
-
-
-
-    public int multiplicacaoDoisNumeros (int num3, int num4) {
-        return num3 * num4;
+    public void divideDoisnumero4 (double num1,double num2){
+        if (num2 == 0){
+            System.out.println("Não existe divisão por 0");
+            return;
+        }
+        System.out.println(num1/num2);
     }
 
 }
+
+
