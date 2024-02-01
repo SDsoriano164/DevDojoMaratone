@@ -14,10 +14,19 @@ public class CarroexemploLoiane {
     public double consumoCombustivel;
 
 
-    //metodos
+    //metodos sem retorno
 
     public void exibirAutonomia(){
         System.out.println("A autonomia do carro é : " + capacidadeCombustivel * consumoCombustivel + "km" );
+    }
+
+    // metodo com retorno
+    public double exibirAutonomia2(){
+     return capacidadeCombustivel * consumoCombustivel;
+
+    }
+    public void exibirAutonomiaPassandoArgumentos (double num1, double num2){
+        System.out.println( num1 * num2);
     }
 
 

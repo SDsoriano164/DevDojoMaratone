@@ -16,7 +16,25 @@ public class CarroTesteExemploLoiane {
 
         System.out.println(Sedan.nome);
         System.out.println(Sedan.modelo);
+        // metodo sem retorno, apenas mostrando o valor no metodo
         Sedan.exibirAutonomia();
+
+        System.out.println("-----------------------");
+        Sedan.exibirAutonomiaPassandoArgumentos(50,0.2);
+
+        // usando retornos
+        System.out.println("-----------------------");
+        // retornando o valor para o chamador // porem sem criar uma variavel.
+        System.out.println(Sedan.exibirAutonomia2() + " km");
+        // retornando o valor para o chamador dentro de uma variavel
+        double autonomia = Sedan.exibirAutonomia2();
+        System.out.println("A autonomia é de : " + autonomia);
+
+
+        System.out.println("-----------------------");
+        Sedan.exibirAutonomiaPassandoArgumentos(50,0.2);
+
+
 
 
     }
