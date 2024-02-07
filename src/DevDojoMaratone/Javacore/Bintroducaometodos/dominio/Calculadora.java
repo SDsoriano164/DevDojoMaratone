@@ -71,6 +71,14 @@ public class Calculadora {
         System.out.println( "numero 2 :" +num2);
 
     }
+    public void somaArrays(int [] numeros){
+        int sum = 0;
+        for (int i = 0; i < numeros.length ; i++) {
+            sum += numeros[i];
+
+        }
+        System.out.println(sum);
+    }
 
 }
 
