@@ -10,7 +10,9 @@ public class ContaCorrenteTeste {
         conta.conta = 26097;
         conta.nome = "Pedro Soriano";
         conta.saldo = 312412;
+        conta.saldoFuturo = 2134;
 
-        conta.ImprimeContaPessoa(conta);
+        conta.ImprimeContaPessoa();
+        conta.valorFuturo();
     }
 }

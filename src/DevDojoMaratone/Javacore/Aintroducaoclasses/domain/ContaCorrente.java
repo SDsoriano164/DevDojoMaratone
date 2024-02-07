@@ -8,16 +8,20 @@ public class ContaCorrente {
 
    public  String nome;
 
+   public int saldoFuturo;
 
-   public void ImprimeContaPessoa (ContaCorrente contaPessoa){
+
+   public void ImprimeContaPessoa (){
        System.out.println(this.conta);
        System.out.println(this.nome);
        System.out.println(this.agencia);
        System.out.println(this.saldo);
+
    }
+   public void valorFuturo(){
 
+       System.out.println(saldo + saldoFuturo);
 
-
-
+   }
 
 }
