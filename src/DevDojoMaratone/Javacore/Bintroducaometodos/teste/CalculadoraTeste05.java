@@ -24,7 +24,7 @@ public class CalculadoraTeste05 {
         calculadora.somaArrays2(num2);
 
         System.out.println("Utilizando o VarArgs");
-        calculadora.somaVarArgs("Pedro",3,4,5,6,7,8,9,10);
+        calculadora.somaArgs(3,5,4,5,6,7,8,9,10);
 
 
 

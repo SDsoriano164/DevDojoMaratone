@@ -86,6 +86,15 @@ public class Calculadora {
         }
         System.out.println(soma);
     }
+    public void somaArgs (int valor,int valor1, int... numeros){
+        int soma = 0;
+        for (int num :numeros){
+            soma += num;
+        }
+        System.out.println(soma);
+
+
+    }
 
 
 }
