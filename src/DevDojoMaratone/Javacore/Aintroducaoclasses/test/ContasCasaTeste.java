@@ -8,11 +8,7 @@ public class ContasCasaTeste {
 
         conta.condominio = 300;
         conta.casa = 580;
-        conta.internet
-        conta.
-        conta.
-        conta.
-        conta.
-        conta.
-    }
+
+
+}
 }
