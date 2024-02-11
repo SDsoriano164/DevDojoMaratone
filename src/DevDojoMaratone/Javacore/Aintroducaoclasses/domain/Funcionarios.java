@@ -17,14 +17,13 @@ public class Funcionarios {
         System.out.println("Idade: " + idade);
 
         // Mostrando os salários usando for-each
-        for (double salarios : salario) {
-            System.out.print("Salário: " + df.format(salarios) + "\n ");
+        if (salario != null){
+            for (double salarios : salario) {
+                System.out.print("Salário: " + df.format(salarios) + "\n ");
+            }
+            imprimeMedia();
+            System.out.println("------------------------");
         }
-
-        // Chamando o método imprimeMedia para imprimir a média salarial
-        imprimeMedia();
-
-        System.out.println("------------------------");
     }
 
     // Método para calcular e imprimir a média salarial
