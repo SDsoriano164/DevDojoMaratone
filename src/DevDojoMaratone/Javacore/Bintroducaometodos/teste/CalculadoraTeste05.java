@@ -28,6 +28,10 @@ public class CalculadoraTeste05 {
 
 
 
+        calculadora.multArgs(3,3,3);
+
+
+
 
 
     }

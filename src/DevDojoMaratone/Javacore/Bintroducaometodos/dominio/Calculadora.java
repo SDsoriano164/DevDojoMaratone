@@ -95,6 +95,14 @@ public class Calculadora {
 
 
     }
+    public void multArgs (int...numeros){
+        int mult = 1;
+        for (int i = 0; i <numeros.length ; i++) {
+            mult *= numeros[i];
+
+        }
+        System.out.println(mult);
+    }
 
 
 }
