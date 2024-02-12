@@ -1,4 +1,4 @@
-package DevDojoMaratone.Javacore.Aintroducaoclasses.ExerciciosTeste;
+package DevDojoMaratone.Javacore.Aintroducaoclasses.test.ExerciciosTeste;
 
 import DevDojoMaratone.Javacore.Aintroducaoclasses.ExerciciosDomain.Biblioteca;
 

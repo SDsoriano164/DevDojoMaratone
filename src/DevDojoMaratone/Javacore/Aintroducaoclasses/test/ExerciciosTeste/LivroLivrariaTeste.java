@@ -1,7 +1,6 @@
-package DevDojoMaratone.Javacore.Aintroducaoclasses.ExerciciosTeste;
+package DevDojoMaratone.Javacore.Aintroducaoclasses.test.ExerciciosTeste;
 
 import DevDojoMaratone.Javacore.Aintroducaoclasses.ExerciciosDomain.LivroLivraria;
-import DevDojoMaratone.Javacore.Aintroducaoclasses.ExerciciosDomain.Livros;
 
 public class LivroLivrariaTeste {
     public static void main(String[] args) {
