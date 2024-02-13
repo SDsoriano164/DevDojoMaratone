@@ -9,11 +9,11 @@ public class PlacadeVideoTeste01 {
 
         placasDeVideo.marca = "Nvidia";
         placasDeVideo.modelo = "RTX 4060";
-        placasDeVideo.Valores = new int[] {1979,1399,2539};
+        placasDeVideo.setValores(new int[] {1979,1399,2539});
 
         placasDeVideo1.marca = "AMD";
         placasDeVideo1.modelo = "RX 6600";
-        placasDeVideo1.Valores = new int[] {2000,1432,1203};
+        placasDeVideo1.setValores(new int[] {1979,1399,2539});
 
 
         placasDeVideo.imprimePlacas();

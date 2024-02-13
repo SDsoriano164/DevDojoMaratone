@@ -28,6 +28,18 @@ public class LampadaTeste {
 
 
 
+        lampada.setligar();
+        lampada.getLigada();
+        lampada.setDesligar();
+        lampada.getLigada();
+
+
+
+
+
+
+
+
         lampada.Sobre();
         System.out.println();
 

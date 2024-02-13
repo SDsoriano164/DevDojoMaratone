@@ -22,24 +22,19 @@ public class Pessoa {
         //variavel da classe vai receber valor do parametro definido no PessoaTeste01
         this.nome = nome;
     }
-    // Atribuir idade
-    public void setIdade (int idade){
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setIdade(int idade) {
         this.idade = idade;
-        if (idade <0){
-            System.out.println("Entrada invalida ");
-            return;
-        }
-    }
-    // Pegando o valor do atributo usando um metodo de retorno
-    public String getNome(){
-        System.out.print("nome :");
-        return this.nome;
-    }
-    // Pegando o valor do atributo idade usando o metodo de retorno
-    public int getIdade(){
-        System.out.print("Idade : ");
-        return this.idade;
     }
 
-
+    public int getIdade() {
+        return idade;
+    }
 }
+
+
+

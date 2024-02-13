@@ -12,7 +12,7 @@ public class FuncionariosTeste01 {
 
         //modificando media
 
-        funcionarios1.setMedia(2000);
+        //funcionarios1.setMedia(2000);
 
 
         // funcionario 1

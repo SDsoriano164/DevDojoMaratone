@@ -4,7 +4,7 @@ public class PlacasDeVideo {
     public String modelo;
     public String marca;
 
-    public int [] Valores;
+    private int [] Valores;
 
 
 
@@ -29,6 +29,10 @@ public class PlacasDeVideo {
             }
         }
         System.out.println(" Maior valor "+ maiorValor);
+
+    }
+    public void setValores(int[] Valores){
+        this.Valores = Valores;
 
     }
 

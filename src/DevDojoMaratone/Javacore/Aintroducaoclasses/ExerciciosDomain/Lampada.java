@@ -12,6 +12,27 @@ public class Lampada {
 
     public String [] tipos;
     public Boolean TipoAbajur;
+    private boolean ligada;
+
+
+
+    public void setligar (){
+        this.ligada = true;
+    }
+
+    public void setDesligar (){
+        this.ligada = false;
+    }
+
+    public void getLigada (){
+        if (ligada == true){
+            System.out.println("A lampada está ligada ");
+        }else{
+            System.out.println(" A lampada está desligada");
+        }
+
+    }
+
 
     public void Sobre(){
         System.out.println("°16 Milhões de Cores e Ajuste de Brilho: Envolva sua casa em uma atmosfera aconchegante escolhendo a cor e a intensidade da sua lâmpada Tapo para cada momento do dia.");
