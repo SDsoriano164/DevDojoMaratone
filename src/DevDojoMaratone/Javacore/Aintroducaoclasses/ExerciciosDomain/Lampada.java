@@ -24,13 +24,13 @@ public class Lampada {
         this.ligada = false;
     }
 
-    public void getLigada (){
-        if (ligada == true){
-            System.out.println("A lampada está ligada ");
+    public boolean getLigada (){
+        if ( ligada == true){
+            System.out.println("Está ligada");
         }else{
-            System.out.println(" A lampada está desligada");
+            System.out.println("Está desligada");
         }
-
+        return ligada;
     }
 
 

@@ -39,7 +39,6 @@ public class LampadaTeste {
 
 
 
-
         lampada.Sobre();
         System.out.println();
 

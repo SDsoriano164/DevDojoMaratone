@@ -12,7 +12,7 @@ public class CarroTesteExemploLoiane {
         Sedan.modelo ="Corola";
         Sedan.numPassageiros = 4;
         Sedan.consumoCombustivel =0.2;
-        Sedan.capacidadeCombustivel = 50;
+        Sedan.setCapacidadeCombustivel(50);
 
         System.out.println(Sedan.nome);
         System.out.println(Sedan.modelo);
@@ -31,8 +31,13 @@ public class CarroTesteExemploLoiane {
         System.out.println("A autonomia é de : " + autonomia);
 
 
-        System.out.println("-----------------------");
-        Sedan.exibirAutonomiaPassandoArgumentos(50,0.2);
+        System.out.println("------ Passando argumentos -------");
+        Sedan.exibirAutonomiaPassandoArgumentos(Sedan.consumoCombustivel,Sedan.capacidadeCombustivel);
+
+        System.out.println("------ Autonomia no get---------- ");
+        System.out.println(Sedan.getAutonomia());
+
+        Sedan.imprimirInformações();
 
 
 

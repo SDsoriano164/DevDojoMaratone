@@ -29,6 +29,22 @@ public class CarroexemploLoiane {
         System.out.println( num1 * num2);
     }
 
+    public void setCapacidadeCombustivel(int capacidadeCombustivel){
+        this.capacidadeCombustivel = capacidadeCombustivel;
+    }
+
+    public int getAutonomia(){
+        return (int) (capacidadeCombustivel *consumoCombustivel);
+    }
+    public void imprimirInformações(){
+        System.out.println("---------------");
+        System.out.println(this.nome);
+        System.out.println(this.modelo);
+        System.out.println(this.ano);
+        System.out.println(this.consumoCombustivel);
+        System.out.println(this.numPassageiros);
+    }
+
 
 
     }
