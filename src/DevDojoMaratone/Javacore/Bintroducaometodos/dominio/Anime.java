@@ -7,6 +7,7 @@ public class Anime {
 
     private String generos;
 
+
     public void init (String nome, String tipo, int episodios){
         this.nome = nome;
         this.tipo =tipo;
