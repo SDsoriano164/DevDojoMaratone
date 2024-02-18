@@ -1,5 +1,7 @@
 package DevDojoMaratone.Javacore.Eblocosdeinicializacao.dominio;
 
+import java.util.Scanner;
+
 public class Pessoa {
     public String nome;
     public int idade;
@@ -14,6 +16,12 @@ public class Pessoa {
 
     public double salario;
 
+    public int dependentes;
+
+    public Pessoa(){
+
+    }
+
     public Pessoa(String nome, int idade, String naturalidade, int altura, int matricula, long cpf, String cargo, double salario) {
         this.nome = nome;
         this.idade = idade;
@@ -22,7 +30,43 @@ public class Pessoa {
         this.cpf = cpf;
         this.cargo = cargo;
         this.salario = salario;
+    }
 
+    public Pessoa(String nome, int idade, String naturalidade, int altura, int matricula, long cpf, String cargo, double salario, int dependentes){
+        this(nome, idade, naturalidade, altura, matricula, cpf, cargo, salario);
+        this.dependentes = dependentes;
+    }
+
+    public void preencherDadosPessoa() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o nome: ");
+        this.nome = scanner.nextLine();
+
+        System.out.print("Digite a idade: ");
+        this.idade = scanner.nextInt();
+        scanner.nextLine(); // Consumir a quebra de linha após o nextInt()
+
+        System.out.print("Digite a naturalidade: ");
+        this.naturalidade = scanner.nextLine();
+
+        System.out.print("Digite a altura: ");
+        this.altura = scanner.nextInt();
+        scanner.nextLine(); // Consumir a quebra de linha após o nextInt()
+
+        System.out.print("Digite o CPF: ");
+        this.cpf = scanner.nextLong();
+        scanner.nextLine(); // Consumir a quebra de linha após o nextLong()
+
+        System.out.print("Digite o cargo: ");
+        this.cargo = scanner.nextLine();
+
+        System.out.print("Digite o salário: ");
+        this.salario = scanner.nextDouble();
+        scanner.nextLine(); // Consumir a quebra de linha após o nextDouble()
+
+        System.out.print("Digite o número de dependentes: ");
+        this.dependentes = scanner.nextInt();
     }
 
     public void imprimePessoas() {
@@ -33,8 +77,7 @@ public class Pessoa {
         System.out.println("Cpf   :   "+this.cpf);
         System.out.println("Cargo : "+this.cargo);
         System.out.println("Salario :"+this.salario);
-
+        System.out.println("Dependentes:" + this.dependentes);
     }
-
 
 }
