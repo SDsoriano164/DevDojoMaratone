@@ -18,6 +18,10 @@ public class Pessoa {
 
     public int dependentes;
 
+    private double aumento = 0.0;
+    private double aumentoDeQuinze = 0.15;
+    private double aumentoDeVinte = 0.20;
+
     public Pessoa(){
 
     }
@@ -26,10 +30,12 @@ public class Pessoa {
         this.nome = nome;
         this.idade = idade;
         this.naturalidade = naturalidade;
+        this.matricula = matricula;
         this.altura = altura;
         this.cpf = cpf;
         this.cargo = cargo;
         this.salario = salario;
+
     }
 
     public Pessoa(String nome, int idade, String naturalidade, int altura, int matricula, long cpf, String cargo, double salario, int dependentes){
@@ -67,6 +73,10 @@ public class Pessoa {
 
         System.out.print("Digite o número de dependentes: ");
         this.dependentes = scanner.nextInt();
+
+        System.out.println("Digite o número da matricula");
+        this.matricula = scanner.nextInt();
+
     }
 
     public void imprimePessoas() {
@@ -78,6 +88,30 @@ public class Pessoa {
         System.out.println("Cargo : "+this.cargo);
         System.out.println("Salario :"+this.salario);
         System.out.println("Dependentes:" + this.dependentes);
+        System.out.println("salario baseado nos dependentes");
+        // chamando método criado na propria classe
+        aumentoSalarial();
+        System.out.println("Novo salário" + this.salario);
+
     }
+
+
+    // métodos
+
+    public int aumentoSalarial(){
+        if (this.dependentes < 2) {
+            aumento = this.salario * aumentoDeQuinze;
+        } else if (this.dependentes > 2) {
+            aumento = this.salario * aumentoDeVinte;
+        }
+
+        this.salario += aumento;
+        return (int) this.salario;
+
+
+    }
+
+
+
 
 }
