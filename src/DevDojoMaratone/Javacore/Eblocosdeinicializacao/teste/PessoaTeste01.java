@@ -6,7 +6,9 @@ import java.util.Scanner;
 
 public class PessoaTeste01 {
     public static void main(String[] args) {
+        // Criando Scanner para receber numero de pessoas para cadastrar
         Scanner scanner = new Scanner(System.in);
+
 
         System.out.println("Quantas pessoas deseja cadastrar?");
         int quantidadePessoas = scanner.nextInt();

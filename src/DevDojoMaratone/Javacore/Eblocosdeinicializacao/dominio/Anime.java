@@ -6,51 +6,25 @@ public class Anime {
 
 
 
-    // bloco de inicialização sempre serão executados antes do construtor
 
 
-    {
-
-        // valor já está sendo inicializado independente do construtor
-        // sempre sera executado
-        episodios = new int[5];
-
-        for (int i = 0; i < episodios.length ; i++) {
-            episodios[i] = 1 + i;
-
-        }
-
-
-    }
 
 
     public Anime(String nome){
+
         this.nome = nome;
+
     }
+
     public Anime (){
         episodios = new int[10];
-
-
         for (int i = 0; i < episodios.length ; i++) {
-            episodios[i] = 1 + i;
+            episodios[i] = i+1;
 
         }
-        System.out.println("Primeiro");
-        for (int ep : this.episodios){
-            System.out.print(ep + " - ");
-
+        for (int ep :this.episodios){
+            System.out.println("Episodio "+ep);
         }
-        System.out.println("\nsegundo");
-        for (int ep : this.episodios){
-            System.out.print(ep + " - ");
-
-        }
-        System.out.println("\nterceiro");
-        for (int ep : this.episodios){
-            System.out.print(ep + " - ");
-
-        }
-        System.out.println();
 
     }
 
