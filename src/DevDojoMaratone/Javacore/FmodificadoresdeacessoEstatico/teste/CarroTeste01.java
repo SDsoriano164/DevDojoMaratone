@@ -12,7 +12,7 @@ public class CarroTeste01 {
         Carro c3 = new Carro("Toyota Supra ",220);
 
 
-        c1.setVelocidadeLimite(180);
+        Carro.velocidadeLimite = 120;
 
         c1.imprime();
 

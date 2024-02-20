@@ -4,7 +4,7 @@ public class Carro {
     private String nome;
     private double velocidadeMaxima;
 
-    private double velocidadeLimite = 250;
+    public static double velocidadeLimite = 250; // Acesso de modificador estatico
 
     public Carro (String nome, double velocidadeMaxima){
         this.nome = nome;
