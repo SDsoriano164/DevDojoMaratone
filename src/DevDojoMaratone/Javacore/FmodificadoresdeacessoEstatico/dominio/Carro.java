@@ -1,8 +1,11 @@
 package DevDojoMaratone.Javacore.FmodificadoresdeacessoEstatico.dominio;
 
 public class Carro {
-    private String nome;
-    private double velocidadeMaxima;
+
+
+    public String nome;
+    public double velocidadeMaxima;
+
 
     public static double velocidadeLimite = 250;
 

@@ -1,91 +1,57 @@
-package DevDojoMaratone.Javacore.Gblocosdeinicializacaostatic.dominio;// Nome do pacote e importações
+package DevDojoMaratone.Javacore.Gblocosdeinicializacaostatic.dominio;
 
-// Definição da classe Anime
 public class Anime {
-
-    /*
-            Sorry for the amount of comments, it's just for study, in my real projects I'll use the clean code.
-     */
-
-
-
-    /*
-      // bloco de inicialização estatica só aceita atributos com o modificador estatico
-    // não aceita atributos de instancia pois pertence a um objeto
-    // ele é executade junto com a jvm
-    // se tiver metodos dentro do bloco static ele é inicializado junto
-
-     */
-
-    // Atributos estáticos
-    private static String nome;
+    private String nome;
     private static int[] episodios;
 
-    // Bloco de inicialização estático 1
-    static {
-        // Mensagem indicando o início do bloco estático 1
-        System.out.println("Bloco estático 1");
 
-        // Inicializa os episódios chamando o método inicializaEpisodios
-        inicializaEpisodios();
+                        // bloco de inicialização estatico
+    // carrega junto com a jvm, se tiver metodos inseridos vai ser executado junto
+    // só consegue acessar membro estaticos não instancia da classe ( membros do objeto )
+    // é executado apenas uma vez, ou quantas vezes você criar, porem você consegue utilizar para todos os objetos criados
 
-        // Chama o método imprime para mostrar os episódios
-        imprime();
+     static  {
+        System.out.println("bloco estatico 1");
+        episodios = new int[10];
+        for (int i = 0; i < episodios.length ; i++) {
+            episodios[i] = i + 1;
+        }
+        System.out.println("---------------");
     }
 
-    // Bloco de inicialização estático 2
     static {
-        // Mensagem indicando o início do segundo bloco estático
-        System.out.println("\nBloco estático 2");
+        System.out.println("Bloco estatico 2");
+        System.out.println("----------------");
     }
-
-    // Bloco de inicialização de instância
     {
-        // Mensagem indicando o início do bloco de inicialização de instância
-        System.out.println("Bloco de inicialização de instância");
+        System.out.println("Bloco de inicialização não estatico");
     }
 
-    // Construtor da classe Anime
+
+    // Construtor que aceita um parâmetro 'nome'
     public Anime(String nome) {
-        // Define o nome da classe para o valor passado no construtor
         this.nome = nome;
+        System.out.println(this.nome);
+
     }
 
-    // Método estático para inicializar os episódios
-    private static void inicializaEpisodios() {
-        // Inicializa o array de episódios com valores sequenciais
+    // Construtor padrão (sem parâmetros)
+    public Anime() {
+        // Estamos iterando e mostrando na classe, e será mostrado no teste
         episodios = new int[10];
         for (int i = 0; i < episodios.length; i++) {
             episodios[i] = i + 1;
         }
-    }
-
-    // Método estático para imprimir os episódios
-    public static void imprime() {
-        // Imprime os episódios
-        for (int eps : episodios) {
-            System.out.print(eps);
+        for (int eps : episodios){
+            System.out.println("episodios : " + eps);
         }
-        // Adiciona uma quebra de linha para melhorar a formatação
-        System.out.println();
+        System.out.println("-------------");
+
+
     }
 
-    // Métodos de acesso para o nome
     public String getNome() {
         return nome;
     }
 
-    public void setNome(String nome) {
-        // Atualiza o nome usando o nome da classe
-        Anime.nome = nome;
-    }
-
-    // Métodos estáticos para acessar e modificar os episódios
-    public static void setEpisodios(int[] episodios) {
-        Anime.episodios = episodios;
-    }
-
-    public static int[] getEpisodios() {
-        return episodios;
-    }
 }

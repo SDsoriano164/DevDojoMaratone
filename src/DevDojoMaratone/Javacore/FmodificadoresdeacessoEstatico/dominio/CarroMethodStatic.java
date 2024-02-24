@@ -1,46 +1,62 @@
 package DevDojoMaratone.Javacore.FmodificadoresdeacessoEstatico.dominio;
 
 public class CarroMethodStatic {
-    private String nome; // Nome da marca do carro
-    private int velocidadeMax; // Velocidade máxima do carro
-    private static int velocidadeLimite; // Velocidade limite global compartilhada por todos os carros
+    private String nome;
+    private int velocidadeMax;
+    private static int velocidadeLimite ;
 
-    // Construtor que inicializa o objeto CarroMethodStatic
-    public CarroMethodStatic(String nome, int velocidadeMax) {
+
+
+    //Constructor
+    public CarroMethodStatic(String nome, int velocidadeMax){
         this.nome = nome;
         this.velocidadeMax = velocidadeMax;
     }
 
-    // Método que imprime informações sobre o carro e a velocidade limite global
-    public void imprime() {
-        System.out.println("---------------------------");
-        System.out.println(" Marca: " + this.nome);
-        System.out.println(" Velocidade máxima: " + this.velocidadeMax);
-        System.out.println(" Velocidade limite global: " + CarroMethodStatic.velocidadeLimite);
+    public void imprime (){
+        System.out.println("--------------------------");
+        System.out.println(this.nome);
+        System.out.println(this.velocidadeMax);
+        System.out.println(Carro.velocidadeLimite);
+
     }
 
-    // Métodos de acesso para os atributos privados
+
     public String getNome() {
         return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public int getVelocidadeMax() {
         return velocidadeMax;
     }
 
-    // Método estático para obter a velocidade limite global
+    public void setVelocidadeMax(int velocidadeMax) {
+        this.velocidadeMax = velocidadeMax;
+    }
+
     public static int getVelocidadeLimite() {
+        System.out.println(velocidadeLimite);
         return velocidadeLimite;
     }
 
-    // Método estático para definir o valor da velocidade limite global
-    // Pode ser acessado externamente, mas preferível utilizar o método definirVelocidadeLimite
-    public static void setVelocidadeLimite(int velocidadeLimite) {
-        CarroMethodStatic.velocidadeLimite = velocidadeLimite;
-    }
+    // para definir o valor do metodo estatic criado para a classe utiliza o nome da classe, pois é pertecentente a ela
+    // só conseguimos acessar sem o static se tiver um objeto criado
 
-    // Método público para definir a velocidade limite com verificações
-    public static void definirVelocidadeLimite(int novaVelocidadeLimite) {
-        setVelocidadeLimite(novaVelocidadeLimite);
+    public  static void setVelocidadeLimite(int velocidadeLimite) {
+        CarroMethodStatic.velocidadeLimite = velocidadeLimite;
+
+    }
+    public void setVeloicidadelimite2(int veloicidadelimite2){
+        CarroMethodStatic.velocidadeLimite = veloicidadelimite2;
+    }
+    public int getVelocidadeLimite1() {
+        System.out.println(velocidadeLimite);
+        return velocidadeLimite;
     }
 }
+
+

@@ -18,7 +18,7 @@ public class AnimeTeste01 {
 
 
         //
-        Anime anime2 = new Anime();
+
     }
 }
 
