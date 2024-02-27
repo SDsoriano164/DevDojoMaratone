@@ -1,6 +1,7 @@
 package DevDojoMaratone.Javacore.HAssociacoes.domain;
 
 public class Time {
+    // associacao unidirecional um para muitos.
     private String nomeTime;
 
 

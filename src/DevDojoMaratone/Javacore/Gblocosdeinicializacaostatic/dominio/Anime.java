@@ -5,7 +5,7 @@ public class Anime {
     private static int[] episodios;
 
 
-                        // bloco de inicialização estatico
+    // bloco de inicialização estatico
     // carrega junto com a jvm, se tiver metodos inseridos vai ser executado junto
     // só consegue acessar membro estaticos não instancia da classe ( membros do objeto )
     // é executado apenas uma vez, ou quantas vezes você criar, porem você consegue utilizar para todos os objetos criados
@@ -18,12 +18,13 @@ public class Anime {
         }
         System.out.println("---------------");
     }
-
+    // carregado junto com a jvm, executa quantas vezes for criado
     static {
         System.out.println("Bloco estatico 2");
         System.out.println("----------------");
     }
     {
+        // executado sempre que uma instancia da classe é criada
         System.out.println("Bloco de inicialização não estatico");
     }
 
