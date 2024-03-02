@@ -2,16 +2,15 @@ package DevDojoMaratone.Javacore.HAssociacoes.Exercicio;
 
 public class Seminario {
     private String titulo;
-    private  Estudante [] estudantes;
+    private Aluno[] alunos;
+
     private Local local;
 
-    public Seminario(String titulo) {
-        this.titulo = titulo;
-    }
 
-    public Seminario(String titulo, Estudante[] estudantes, Local local) {
+
+    public Seminario(String titulo, Aluno[] alunos, Local local) {
         this.titulo = titulo;
-        this.estudantes = estudantes;
+        this.alunos = alunos;
         this.local = local;
     }
 
@@ -19,25 +18,20 @@ public class Seminario {
         return titulo;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
+
+
+    public Aluno[] getAlunos() {
+        return alunos;
     }
 
-    public Estudante[] getEstudantes() {
-        return estudantes;
-    }
 
-    public void setEstudantes(Estudante[] estudantes) {
-        this.estudantes = estudantes;
-    }
 
     public Local getLocal() {
         return local;
     }
 
-    public void setLocal(Local local) {
-        this.local = local;
-    }
+
 }
+
 
 

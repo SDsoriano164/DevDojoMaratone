@@ -11,7 +11,5 @@ public class Local {
         return endereço;
     }
 
-    public void setEndereço(String endereço) {
-        this.endereço = endereço;
-    }
+
 }

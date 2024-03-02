@@ -28,9 +28,6 @@ public class Jogador {
         this.time = time;
     }
 
-    public Time getTime() {
-        return time;
-    }
 
 
     public String getNome() {

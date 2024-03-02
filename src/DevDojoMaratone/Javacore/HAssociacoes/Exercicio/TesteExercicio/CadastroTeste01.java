@@ -1,24 +1,34 @@
 package DevDojoMaratone.Javacore.HAssociacoes.Exercicio.TesteExercicio;
 
-import DevDojoMaratone.Javacore.HAssociacoes.Exercicio.Estudante;
-import DevDojoMaratone.Javacore.HAssociacoes.Exercicio.Local;
-import DevDojoMaratone.Javacore.HAssociacoes.Exercicio.Professor;
-import DevDojoMaratone.Javacore.HAssociacoes.Exercicio.Seminario;
+
+import DevDojoMaratone.Javacore.HAssociacoes.Exercicio.*;
 
 public class CadastroTeste01 {
     public static void main(String[] args) {
-        Local local = new Local(" Konoha ");
-        Estudante estudante = new Estudante("naruto", 23);
-        Professor professor = new Professor("Jiraya Sensei","Rasengan");
+        Aluno aluno = new Aluno("Rock lee",23);
+        Professor professor = new Professor("Mestre Guy");
+        Local local = new Local("Vila da folha");
 
-        Estudante [] estudantesSeminario = {estudante};
+            // array de alunos associado ao seminario
+        Aluno [] alunosSeminarios = {aluno};
 
-        Seminario seminario = new Seminario("Como fazer o rasenShuriken ? ",estudantesSeminario,local);
+                     // instancia da classe seminario
+        Seminario seminario = new Seminario("Konoha Senpuu Tutorial",alunosSeminarios,local);
+
+            // array de seminarios associado a professor
+                                                // objetos armazenados no array de seminarios
         Seminario [] seminariosDisponiveis = {seminario};
+
+            // conectando seminarios a classe professor
         professor.setSeminarios(seminariosDisponiveis);
 
+        ImprimeSeminario imprimir = new ImprimeSeminario();
+        imprimir.imprime(professor);
 
-        professor.imprime();
+
+
+
+
 
     }
 }

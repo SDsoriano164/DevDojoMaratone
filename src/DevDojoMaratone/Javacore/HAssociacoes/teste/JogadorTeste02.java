@@ -9,9 +9,12 @@ public class JogadorTeste02 {
         Time time = new Time("Campinense Clube");
 
         Jogador jogador2 = new Jogador("Adelino ");
+
         Time time2 = new Time("Treze");
         jogador1.setTime(time);
+
         jogador2.setTime(time2);
+
         jogador1.imprime();
         jogador2.imprime();
 
