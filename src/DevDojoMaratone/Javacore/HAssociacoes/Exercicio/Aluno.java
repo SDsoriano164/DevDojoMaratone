@@ -1,8 +1,10 @@
 package DevDojoMaratone.Javacore.HAssociacoes.Exercicio;
 
 public class Aluno {
+
     private String nome;
     private int idade;
+
     private Seminario seminario;
 
     public Aluno(String nome, int idade) {
