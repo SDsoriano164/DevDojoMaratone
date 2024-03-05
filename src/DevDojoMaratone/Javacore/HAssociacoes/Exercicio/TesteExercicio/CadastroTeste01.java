@@ -12,6 +12,7 @@ public class CadastroTeste01 {
 
 
 
+
         // Array de objetos // Criado para associar alunos a classe Seminario ( construtor exige que seja adicionado um array de alunos);
         Aluno [] alunosSeminarios = {aluno};
 
@@ -25,9 +26,11 @@ public class CadastroTeste01 {
 
         professor.setSeminarios(seminariosDisponiveis);
 
+
         ImprimeSeminario imprimir = new ImprimeSeminario();
 
         imprimir.imprime(professor);
+
 
 
     }
