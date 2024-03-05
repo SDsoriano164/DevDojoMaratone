@@ -2,10 +2,10 @@ Crie um sistema que gerencie seminarios
 
 O sistema devéra cadastrar seminarios, estudantes, professores, e local onde será realizado
 
-um aluno poderá estar em apenas um seminário
-um seminário pode ter nenhum ou vários alunos
-um professor poderá ter vários seminários
-um seminário deverá ter um local
+um aluno poderá estar em apenas um seminário // um para um
+um seminário pode ter nenhum ou vários alunos // muitos para um
+um professor poderá ter vários seminários // muitos para um
+um seminário deverá ter um local           // um para um
 
 Campos basicos :
 seminário : titulo

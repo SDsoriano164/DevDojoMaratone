@@ -2,7 +2,6 @@ package DevDojoMaratone.Javacore.HAssociacoes.Exercicio;
 
 public class Professor {
     private String nome;
-    private String especialidade;
 
     private Seminario[] seminarios;
 
@@ -10,6 +9,10 @@ public class Professor {
         this.nome = nome;
     }
 
+    public Professor(String nome, Seminario[] seminarios) {
+        this.nome = nome;
+        this.seminarios = seminarios;
+    }
 
     public String getNome() {
         return nome;
@@ -18,7 +21,6 @@ public class Professor {
     public void setNome(String nome) {
         this.nome = nome;
     }
-
 
     public Seminario[] getSeminarios() {
         return seminarios;
