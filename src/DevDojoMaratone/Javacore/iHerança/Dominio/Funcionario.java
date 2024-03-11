@@ -7,6 +7,10 @@ public class Funcionario extends Pessoa {
         return salario;
     }
 
+    public Funcionario(String nome){
+        super(nome);
+    }
+
     @Override
     public void imprime() {
         super.imprime();
