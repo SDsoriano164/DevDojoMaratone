@@ -11,12 +11,15 @@ public class Carro {
 
 
 
-
-
+    // permite acesso a variavel de refêrencia sem precisar utilizar o get
     public final Comprador COMPRADOR = new Comprador();
 
+
     // Constante criada
+
+            // static permite o uso direto da referência da classe, sem necessidade de criação da istância
     public static final double VELOCIDADE_LIMITE = 220;
+
 
     public Comprador getCOMPRADOR() {
         return COMPRADOR;
@@ -33,5 +36,6 @@ public class Carro {
     public void setNome(String nome) {
         this.nome = nome;
     }
+
 
 }
