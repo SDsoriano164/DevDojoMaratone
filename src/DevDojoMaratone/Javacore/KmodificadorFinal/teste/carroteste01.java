@@ -18,6 +18,7 @@ public class carroteste01 {
         System.out.println(carro.COMPRADOR);
 
         carro.COMPRADOR.setNome("Kakaroto");
+
         System.out.println(carro.COMPRADOR);
     }
 }
