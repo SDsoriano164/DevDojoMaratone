@@ -7,7 +7,7 @@ public class Carro extends Concessionaria {
     private String nome;
     private int valorCarro;
 
-    private int valorFinal;
+
     private int potência;
 
     public Carro(String tipoVeiculo, String marca, TipoCliente clienteComprador, TipoPagamento tipoPagamento, String nome, int valorCarro, int potência) {
@@ -22,11 +22,10 @@ public class Carro extends Concessionaria {
     @Override
     public void imprimeVeiculo() {
         super.imprimeVeiculo();
-        int desconto =
         System.out.println("nome :" +this.nome);
         System.out.println("valor :" +this.valorCarro);
         System.out.println("potencia :" +this.potência+ " : CV de potência");
-        System.out.println("valor com desconto : " + valorFinal);
+
     }
 
 

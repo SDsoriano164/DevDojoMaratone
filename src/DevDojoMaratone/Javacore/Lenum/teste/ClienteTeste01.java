@@ -13,6 +13,19 @@ public class ClienteTeste01 {
         System.out.println(cliente02);
         System.out.println(cliente03);
         System.out.println(cliente04);
+
+        System.out.println(TipoCliente.PESSOA_FISICA);
+
+        // pegando atributos pela enumeração
+        System.out.println(TipoCliente.valueOf("PESSOA_FISICA"));
+        System.out.println("-------------------------------------------");
+
+        // pegando pela referências ( parameters )
+        for (TipoCliente tipo : TipoCliente.values()){
+            System.out.println(tipo.nomeRelatorio);
+        }
+
+
     }
 
 
