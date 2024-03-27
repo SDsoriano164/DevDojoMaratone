@@ -30,6 +30,6 @@ public class DataBaseLoader implements DataLoader, DataRemove {
     // não conseguimos sobrecrever metodos estatico da interface, podemos usar o mesmo nome porém acessamos ele de forma diferente
     // PARA A CLASSE E PARA A INTERFACE
     public static void retriveMaxDataSize(){ // executado na classe
-        System.out.println("Dentro da interface DataLoader");
+        System.out.println("Dentro da classe DataBaseLoader");
     }
 }
