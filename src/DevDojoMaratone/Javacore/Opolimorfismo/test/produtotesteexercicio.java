@@ -21,7 +21,7 @@ public class produtotesteexercicio {
 
 
         // Calculando e mostrando informações
-        CalculadoraImposto.calcularImpostoComputador(computador);
+        CalculadoraImposto.calcularImpostoProduto(computador);
         System.out.println("-----------------------------------");
 
         comprador.imprime();
