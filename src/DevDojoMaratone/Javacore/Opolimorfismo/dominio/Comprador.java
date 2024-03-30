@@ -22,7 +22,6 @@ public class Comprador {
         System.out.println("idade do comprador: " +this.idade);
         System.out.println("tipo de pagamento: " +this.tipoPagamento);
         System.out.println(" nome do produto: "+ this.produto.getNome());
-
         double valorPagoComImposto = this.produto.calcularImposto() + this.produto.getValor();
         System.out.println(" valor do produto: "+ valorPagoComImposto);
 
