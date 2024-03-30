@@ -10,15 +10,10 @@ public class produtosteste01 {
         Tomate tomate = new Tomate("tomate cereja",6);
 
         // chamada para o metodo de serviço estatico
-        CalculadoraImposto.calcularImpostoComputador(computador);
+        CalculadoraImposto.calcularImpostoProduto(computador);
         System.out.println("--------------------------------------");
 
-
-        // chamada para o metodo não estatico
-
-        CalculadoraImposto calculadoraImposto = new CalculadoraImposto();
-
-        calculadoraImposto.calcularImpostoTomate(tomate);
+        CalculadoraImposto.calcularImpostoProduto(tomate);
     }
 
 }
